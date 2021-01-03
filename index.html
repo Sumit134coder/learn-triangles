@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+<div class="main">
+    <h1>TRIANGLES</h1>
+    <div class="card">
         <h1>learn the triangles</h1>
         <label for="1st angle">enter 1st angle: </label>
         <input type="number" name="1st angle" id="first"><br>
@@ -18,6 +20,31 @@
         <button type="submit">Submit</button>
         <div id="output"></div>
     </div>
+    <div class="card">
+        <h1>Hypotenous of a right angled triangle</h1>
+            <label for="base"></label>
+            <input type="number" id="base">
+            <label for="height"></label>
+            <input type="number" id="height">
+            <button type="submit">Submit</button>
+            <div id="outputH"></div>
+    </div>
+    <div class="quiz">
+        <h1>RIGHT , ACUTE OR ABTUSE?</h1>
+        <div id="Angle1"></div>
+        <div id="Angle2"></div>
+        <div id="Angle3"></div>
+        <input type="radio" name="option" value="acute">
+        <label for="option">ACUTE</label> <br>
+        <input type="radio" name="option" value="obtuse">
+        <label for="option">OBTUSE</label> <br>
+        <input type="radio" name="option" value="right">
+        <label for="option">RIGHT</label> <br>
+        <button id="QuizBtn" type="submit">Submit</button>
+        <div id="quizOutput"></div>
+    </div>
+</div>
 </body>
 <script src="app.js"></script>
+<script src="quiz.js"></script>
 </html>
